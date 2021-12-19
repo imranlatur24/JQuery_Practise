@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>jQuery Validation - Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+  	.error{
+    	color: red;
+        font-style: italic;
+    }
+  </style>
+</head>
+<body>
+	<div class = "container">
+    	<div class = "col-md-6 col-md-offset-3">
+        	<div class = "panel panel-primary">
+            	<div class = "panel-heading">
+                	Registration
+                </div>
+                <div class = "panel-body">
+                	<form id = "registration" action="" method="post">
+                    	<input type = "text" class = "form-control" name = "username" placeholder = "Username"/>
+                        <br/>
+                        <input type = "text" class = "form-control" name = "email" placeholder = "Email"/>
+                        <br/>
+                        <input type = "password" class = "form-control" name = "password" placeholder = "Password" id = "password"/>
+                        <br/>
+                        <input type = "password" class = "form-control" name = "confirm" placeholder = "Confirm Password"/>
+                        <br/>
+                        <input type = "text" class = "form-control" name = "fname" placeholder = "First Name"/>
+                        <br/>
+                        <input type = "text" class = "form-control" name = "lname" placeholder = "Last Name"/>
+                        <br/>
+                        <div class = "gender">
+							<label class="radio-inline"><input type="radio" name="gender" class = "form-contorl"/>Male</label>
+							<label class="radio-inline"><input type="radio" name="gender" class = "form-contorl"/>Female</label>       
+                        </div>
+                        <br/>
+                        
+                        <div class = "hobbies">
+                        	<label class="checkbox-inline"><input type="checkbox" name = "hobbies">Cricket</label>
+							<label class="checkbox-inline"><input type="checkbox" name = "hobbies">Football</label>
+							<label class="checkbox-inline"><input type="checkbox" name = "hobbies">Hockey</label>
+                        	<label class="checkbox-inline"><input type="checkbox" name = "hobbies">Tennis</label>
+                        </div>
+                        <br/>
+                        <select class = "form-control" name = "country" class="form-select" aria-label="Default select example">
+                        	<option value="0" selected="" disabled="">--Select Country--</option>
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>Japan</option>
+                            <option>China</option>
+                            <option>South Africa</option>
+                        </select>
+                        <br/>
+                        <textarea class = "form-control" name = "address" placeholder="Address"></textarea>
+                        <br/>
+                        <button type = "submit" class = "btn btn-primary" id="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="D:\JQuery_Practise\js\jquery.js"></script>
+  	<script src="D:\JQuery_Practise\js\js_validation\jquery.validate.js"></script>
+    <script src="D:\JQuery_Practise\js\js_validation\jquery.validate.min.js"></script>
+    <script src="D:\JQuery_Practise\js\jquery_register_validation.js"></script>
+</body>
+</html>
